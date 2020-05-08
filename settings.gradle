@@ -1,0 +1,3 @@
+rootProject.name='AndLibrayNote'
+include ':app'
+include ':andlibrarynote'
