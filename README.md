@@ -1,7 +1,7 @@
 # AndLibraryNote-Android
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=15)
-[![](https://jitpack.io/v/moekyawsoe/AndLibrayNote.svg)](https://jitpack.io/#moekyawsoe/AndLibrayNote)
+[![](https://jitpack.io/v/moekyawsoe/AndLibraryNote.svg)](https://jitpack.io/#moekyawsoe/AndLibraryNote)
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.moekyawsoe:AndLibrayNote:0.1.1'
+	implementation 'com.github.moekyawsoe:AndLibraryNote:0.1.2'
 }
 ```
 ## Usage
@@ -83,5 +83,11 @@ With custom badge
 ``` java
 public void CustomToastTwo(View view){
        MksToast.makeText(MainActivity.this,"This is Custom Badge Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,false).show();
+}
+```
+With custom badge and custom corner icon
+``` java
+public void CustomToastThree(View view){
+        MksToast.makeText(MainActivity.this,"This is Custom Badge & Corner icon Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,R.drawable.logopng).show();
 }
 ```
