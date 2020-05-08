@@ -77,12 +77,48 @@ public class MksToast extends Toast {
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
         ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
         l1.setText(message);
-
         img.setImageResource(ImageResource);
         if (Icon == true)
             img1.setVisibility(View.VISIBLE);
         else if (Icon == false)
             img1.setVisibility(View.GONE);
+        switch (type) {
+            case 1:
+                linearLayout.setBackgroundResource(R.drawable.default_type);
+                break;
+            case 2:
+                linearLayout.setBackgroundResource(R.drawable.success_type);
+                break;
+            case 3:
+                linearLayout.setBackgroundResource(R.drawable.warning_type);
+                break;
+            case 4:
+                linearLayout.setBackgroundResource(R.drawable.error_type);
+                break;
+            case 5:
+                linearLayout.setBackgroundResource(R.drawable.info_type);
+                break;
+
+            default:
+                linearLayout.setBackgroundResource(R.drawable.default_type);
+                img.setVisibility(View.GONE);
+                break;
+        }
+        toast.setView(layout);
+        return toast;
+    }
+
+    public static Toast makeText(Context context, String message, int duration, int type, int ImageResource, int Icon) {
+        Toast toast = new Toast(context);
+        View layout = LayoutInflater.from(context).inflate(R.layout.mks_toast, null, false);
+        TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
+        LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
+        ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
+        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+        l1.setText(message);
+        img.setImageResource(ImageResource);
+        img1.setImageResource(Icon);
+
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.default_type);
