@@ -40,35 +40,35 @@ Default Toast:
 
 ``` java
 public void defaultToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Default Toast", Toast.LENGTH_LONG,MksToast.Default,true);
+        MksToast.makeText(MainActivity.this,"This is Default Toast", Toast.LENGTH_LONG,MksToast.Default,true).show();
 }
 ```
 Success Toast:
 
 ``` java
 public void successToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Success Toast", Toast.LENGTH_LONG,MksToast.SUCCESS,true);
+        MksToast.makeText(MainActivity.this,"This is Success Toast", Toast.LENGTH_LONG,MksToast.SUCCESS,true).show();
 }
 ```
 Info Toast:
 
 ``` java
 public void infoToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Info Toast", Toast.LENGTH_LONG,MksToast.INFO,true);
+        MksToast.makeText(MainActivity.this,"This is Info Toast", Toast.LENGTH_LONG,MksToast.INFO,true).show();
 }
 ```
 Warning Toast:
 
 ``` java
 public void warningToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Warning Toast", Toast.LENGTH_LONG,MksToast.WARNING,true);
+        MksToast.makeText(MainActivity.this,"This is Warning Toast", Toast.LENGTH_LONG,MksToast.WARNING,true).show();
 }
 ```
 Error Toast:
 
 ``` java
 public void errorToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Error Toast", Toast.LENGTH_LONG,MksToast.ERROR,true);
+        MksToast.makeText(MainActivity.this,"This is Error Toast", Toast.LENGTH_LONG,MksToast.ERROR,true).show();
 }
 ```
 
@@ -82,12 +82,12 @@ public void CustomToastOne(View view){
 With custom badge
 ``` java
 public void CustomToastTwo(View view){
-       MksToast.makeText(MainActivity.this,"This is Custom Badge Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,false);
+       MksToast.makeText(MainActivity.this,"This is Custom Badge Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,false).show();
 }
 ```
 With custom badge and custom corner icon
 ``` java
 public void CustomToastThree(View view){
-        MksToast.makeText(MainActivity.this,"This is Custom Badge & Corner icon Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,R.drawable.logopng);
+        MksToast.makeText(MainActivity.this,"This is Custom Badge & Corner icon Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,R.drawable.logopng).show();
 }
 ```
