@@ -105,6 +105,7 @@ public class MksToast extends Toast {
                 break;
         }
         toast.setView(layout);
+        toast.show();
         return toast;
     }
 
@@ -142,6 +143,7 @@ public class MksToast extends Toast {
                 break;
         }
         toast.setView(layout);
+        toast.show();
         return toast;
     }
 
