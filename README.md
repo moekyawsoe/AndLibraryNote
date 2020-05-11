@@ -1,7 +1,7 @@
 # AndLibraryNote-Android
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=15)
-[![](https://jitpack.io/v/moekyawsoe/AndLibraryNote.svg)](https://jitpack.io/#moekyawsoe/AndLibraryNote)
+[![](https://jitpack.io/v/moekyawsoe/AndLibrayNote.svg)](https://jitpack.io/#moekyawsoe/AndLibrayNote)
 
 ## Prerequisites
 
@@ -40,35 +40,35 @@ Default Toast:
 
 ``` java
 public void defaultToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Default Toast", Toast.LENGTH_LONG,MksToast.Default,true).show();
+        MksToast.makeText(MainActivity.this,"This is Default Toast", Toast.LENGTH_LONG,MksToast.Default,true);
 }
 ```
 Success Toast:
 
 ``` java
 public void successToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Success Toast", Toast.LENGTH_LONG,MksToast.SUCCESS,true).show();
+        MksToast.makeText(MainActivity.this,"This is Success Toast", Toast.LENGTH_LONG,MksToast.SUCCESS,true);
 }
 ```
 Info Toast:
 
 ``` java
 public void infoToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Info Toast", Toast.LENGTH_LONG,MksToast.INFO,true).show();
+        MksToast.makeText(MainActivity.this,"This is Info Toast", Toast.LENGTH_LONG,MksToast.INFO,true);
 }
 ```
 Warning Toast:
 
 ``` java
 public void warningToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Warning Toast", Toast.LENGTH_LONG,MksToast.WARNING,true).show();
+        MksToast.makeText(MainActivity.this,"This is Warning Toast", Toast.LENGTH_LONG,MksToast.WARNING,true);
 }
 ```
 Error Toast:
 
 ``` java
 public void errorToast(View view){
-        MksToast.makeText(MainActivity.this,"This is Error Toast", Toast.LENGTH_LONG,MksToast.ERROR,true).show();
+        MksToast.makeText(MainActivity.this,"This is Error Toast", Toast.LENGTH_LONG,MksToast.ERROR,true);
 }
 ```
 
@@ -82,12 +82,12 @@ public void CustomToastOne(View view){
 With custom badge
 ``` java
 public void CustomToastTwo(View view){
-       MksToast.makeText(MainActivity.this,"This is Custom Badge Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,false).show();
+       MksToast.makeText(MainActivity.this,"This is Custom Badge Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,false);
 }
 ```
 With custom badge and custom corner icon
 ``` java
 public void CustomToastThree(View view){
-        MksToast.makeText(MainActivity.this,"This is Custom Badge & Corner icon Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,R.drawable.logopng).show();
+        MksToast.makeText(MainActivity.this,"This is Custom Badge & Corner icon Toast", Toast.LENGTH_LONG, MksToast.INFO,R.drawable.logopng,R.drawable.logopng);
 }
 ```
