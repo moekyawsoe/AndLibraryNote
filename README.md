@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.moekyawsoe:AndLibraryNote:0.1.4'
+	implementation 'com.github.moekyawsoe:AndLibraryNote:0.1.5'
 }
 ```
 ## Usage
